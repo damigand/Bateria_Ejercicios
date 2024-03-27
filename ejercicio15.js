@@ -7,3 +7,9 @@ const products = [
    'Cinrurón de Orión',
    'AC/DC Camiseta',
 ];
+
+for (let a = 0; a < products.length; a++) {
+   if (products[a].includes('Camiseta')) {
+      console.log(products[a]);
+   }
+}

@@ -7,3 +7,12 @@ const placesToTravel = [
    { id: 44, name: 'Filipinas' },
    { id: 59, name: 'Madagascar' },
 ];
+
+for (let placeToTravel of placesToTravel) {
+   if (placeToTravel.id == 11 || placeToTravel.id == 40) {
+      let index = placesToTravel.indexOf(placeToTravel);
+      placesToTravel.splice(index, 1);
+   }
+}
+
+console.log(placesToTravel);

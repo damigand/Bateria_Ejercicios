@@ -6,3 +6,11 @@ const toys = [
    { id: 40, name: 'El gato con Guantes' },
    { id: 40, name: 'El gato felix' },
 ];
+
+for (let a = toys.length - 1; a >= 0; a--) {
+   if (toys[a].name.includes('gato')) {
+      toys.splice(a, 1);
+   }
+}
+
+console.log(toys);

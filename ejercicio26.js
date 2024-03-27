@@ -7,3 +7,14 @@ const products = [
    { name: 'Sable laser FX', sellCount: 23 },
    { name: 'Varita de Voldemort', sellCount: 6 },
 ];
+
+for (let product of products) {
+   if (product.sellCount < 20) {
+      badProducts.push(product);
+   } else {
+      goodProducts.push(product);
+   }
+}
+
+console.log(goodProducts);
+console.log(badProducts);

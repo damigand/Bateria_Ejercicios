@@ -5,3 +5,11 @@ const products = [
    { name: 'Sable laser FX', sellCount: 23 },
    { name: 'Varita de Voldemort', sellCount: 6 },
 ];
+
+totalSellCount = 0;
+for (let product in products) {
+   totalSellCount += products[product].sellCount;
+}
+
+console.log(`Ventas totales: ${totalSellCount}`);
+console.log(`Media de ventas: ${totalSellCount / products.length}`);

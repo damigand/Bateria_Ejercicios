@@ -7,3 +7,17 @@ const users = [
    { name: 'Bruce', years: 32 },
    { name: 'Khamala', years: 16 },
 ];
+
+console.log('Usuarios menores de edad: ');
+for (let user of users) {
+   if (user.years < 18) {
+      console.log(user);
+   }
+}
+
+console.log('Usuarios mayores de edad: ');
+for (let user of users) {
+   if (user.years >= 18) {
+      console.log(user);
+   }
+}

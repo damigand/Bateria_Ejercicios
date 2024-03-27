@@ -2,5 +2,12 @@
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
 function sumAll(param) {
-   // insert code
+   let suma = 0;
+   for (let num of param) {
+      suma += num;
+   }
+   return suma;
 }
+
+let sum = sumAll(numbers);
+console.log(sum);

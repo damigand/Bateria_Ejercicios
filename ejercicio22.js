@@ -8,3 +8,16 @@ const foodSchedule = [
    { name: 'Rice', isVegan: true },
    { name: 'Pasta', isVegan: true },
 ];
+
+for (let food of foodSchedule) {
+   if (!food.isVegan) {
+      let random = Math.floor(Math.random() * fruits.length);
+      let fruta = fruits[random];
+      fruits.splice(random, 1);
+
+      food.name = fruta;
+      food.isVegan = true;
+   }
+}
+
+console.log(foodSchedule);

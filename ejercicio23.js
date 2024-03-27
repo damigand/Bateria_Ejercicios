@@ -7,3 +7,23 @@ const movies = [
    { name: 'Star Wars: A New Hope', durationInMinutes: 214 },
    { name: 'Terminator', durationInMinutes: 140 },
 ];
+
+let smallMovies = [];
+let mediumMovies = [];
+let bigMovies = [];
+
+for (let movie of movies) {
+   if (movie.durationInMinutes < 100) {
+      smallMovies.push(movie);
+   }
+   if (movie.durationInMinutes >= 100 && movie.durationInMinutes < 200) {
+      mediumMovies.push(movie);
+   }
+   if (movie.durationInMinutes > 200) {
+      bigMovies.push(movie);
+   }
+}
+
+console.log(smallMovies);
+console.log(mediumMovies);
+console.log(bigMovies);
